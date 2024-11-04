@@ -13,8 +13,8 @@ sidebarclose.onclick = function () {
 }
 const btn_first = document.querySelector(".resume-btn");
 btn_first.addEventListener("click",function(){
-    const fileUrl = "RAVI-DHANVAL-RESUME.pdf";
-    const fileName = "RAVI-DHANVAL-RESUME.pdf";
+    const fileUrl = "ravi-dhanval-webdev.pdf";
+    const fileName = "ravi-dhanval-webdev.pdf";
 
     const link = document.createElement("a");
     link.href = fileUrl;
