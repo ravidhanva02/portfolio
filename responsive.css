@@ -1,0 +1,233 @@
+@media (max-width: 1100px) {
+  .hero,
+  .about-grid,
+  .contact-grid,
+  .focus-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 52px;
+  }
+
+  .hero-visual {
+    justify-content: flex-start;
+  }
+
+  .three-column {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .freelance-cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-actions {
+    justify-content: flex-start;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 860px) {
+  :root {
+    --section: min(100% - 28px, 1180px);
+  }
+
+  .navbar {
+    min-height: 64px;
+  }
+
+  .menu-toggle,
+  .menu-close {
+    display: inline-grid;
+    place-items: center;
+  }
+
+  .nav-panel {
+    position: fixed;
+    inset: 0 0 0 auto;
+    width: min(360px, 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: -24px 0 60px rgba(15, 23, 42, 0.16);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+  }
+
+  .nav-panel.open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .menu-close {
+    align-self: flex-end;
+    margin-bottom: 10px;
+  }
+
+  .nav-link,
+  .nav-cta {
+    width: 100%;
+    min-height: 46px;
+    justify-content: flex-start;
+    border-radius: 14px;
+  }
+
+  .nav-cta {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .hero-actions,
+  .social-row {
+    justify-content: flex-start;
+  }
+
+  .project-grid,
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .section-shell {
+    padding: 50px 0;
+  }
+
+  .badge-one {
+    left: 12px;
+  }
+
+  .badge-two {
+    right: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    gap: 30px;
+  }
+
+  .hero h1 {
+    font-size: 2.45rem;
+  }
+
+  .hero h2 {
+    font-size: 1.42rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-actions,
+  .cta-actions {
+    align-items: stretch;
+  }
+
+  .three-column,
+  .process-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-copy,
+  .quick-info,
+  .service-card,
+  .reason-card,
+  .skill-category,
+  .timeline-item,
+  .process-step,
+  .contact-details,
+  .contact-form,
+  .project-body {
+    padding: 18px;
+  }
+
+  .focus-panel,
+  .freelance-cta {
+    border-radius: 24px;
+    padding: 22px;
+  }
+
+  .float-badge {
+    position: static;
+    margin-top: 10px;
+    margin-right: 8px;
+    animation: none;
+  }
+
+  .profile-card {
+    border-radius: 26px;
+    padding: 10px;
+  }
+
+  .profile-card img {
+    border-radius: 18px;
+  }
+
+  .project-media {
+    min-height: 160px;
+  }
+
+  .project-media img {
+    height: 185px;
+  }
+
+  .contact-details a,
+  .contact-details p {
+    grid-template-columns: 40px 1fr;
+    padding: 12px;
+  }
+
+  .contact-details i {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 390px) {
+  :root {
+    --section: min(100% - 20px, 1180px);
+  }
+
+  .brand {
+    font-size: 0.9rem;
+  }
+
+  .hero h1 {
+    font-size: 2.14rem;
+  }
+
+  .hero h2 {
+    font-size: 1.24rem;
+  }
+
+  .section-heading h2,
+  .focus-panel h2,
+  .freelance-cta h2 {
+    font-size: 1.7rem;
+  }
+
+  .project-filters {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .filter-btn {
+    width: 100%;
+  }
+}
