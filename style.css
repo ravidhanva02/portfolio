@@ -789,7 +789,7 @@ textarea {
 .footer a,
 .footer span {
   display: block;
-  margin-bottom: 7px;
+  /* margin-bottom: 7px; */
   font-size: 0.92rem;
   color: #cfe0ff;
 }
@@ -805,6 +805,10 @@ textarea {
   padding-top: 18px;
   text-align: center;
   color: #b8c7df;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .back-to-top {
