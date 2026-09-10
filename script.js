@@ -3,7 +3,7 @@ const socialLinks = {
   linkedin: "https://www.linkedin.com/in/ravi-dhanval-9a1b97213/",
   email: "mailto:dhanvalrj@gmail.com",
   whatsapp: "https://api.whatsapp.com/send/?phone=7566258902",
-  resume: "ravi-dhanval-webdev.pdf"
+  resume: "Ravi_Dhanval_Resume.pdf"
 };
 
 document.addEventListener("DOMContentLoaded", () => {
